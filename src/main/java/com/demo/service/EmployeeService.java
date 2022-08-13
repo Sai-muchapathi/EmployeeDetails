@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EmployeeService {
@@ -16,9 +17,9 @@ public class EmployeeService {
 		return employeeDao.findAll();
 	}
 
-	/*public List<Employee> getById(Long id) {
-		return employeeDao.findAllById(Collections.singleton(id));
-	}*/
+	public Optional<Employee> getById(long id) {
+		return employeeDao.findById(id);
+	}
 
 	/*public List<Employee> save() {
 

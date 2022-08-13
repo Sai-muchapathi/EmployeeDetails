@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
-@Table(name="EMPLOYEE")
+@Table(name="employee")
 public class Employee implements Serializable {
 
     private Long id;
@@ -34,7 +34,7 @@ public class Employee implements Serializable {
         return id;
     }
 
-    /*public String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
@@ -64,7 +64,7 @@ public class Employee implements Serializable {
 
     public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
-    }*/
+    }
 
     @Override
     public String toString() {
