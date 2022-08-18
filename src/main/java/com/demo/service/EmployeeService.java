@@ -21,11 +21,11 @@ public class EmployeeService {
 		return employeeDao.findById(id);
 	}
 
-	/*public List<Employee> save() {
-
+	public Employee save(Employee employee) {
+		return employeeDao.save(employee);
 	}
 
-	public List<Employee> delete() {
-
-	}*/
+	public void delete(long id) {
+		employeeDao.deleteById(id);
+	}
 }
